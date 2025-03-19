@@ -1,5 +1,6 @@
 {
   "name": "reactproject",
+  "homepage": "https://jacobberggreen.github.io/ReactUSM/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
