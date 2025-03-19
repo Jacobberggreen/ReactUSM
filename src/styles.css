@@ -431,25 +431,6 @@ a[x-apple-data-detectors] {
 }
 
 
-.nav-container .active {
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    text-decoration-thickness: 3px;
-    border-radius: 5px;
-    color: var(--primary-color);
-    text-decoration-color: var(--primary-color);
-}
-
-.nav-container .no .active {
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    text-decoration-thickness: 3px;
-    border-radius: 5px;
-    color: white;
-    text-decoration-color: white;
-}
-
-
 @media (min-width: 981px) {
     .header.home {
         background: rgba(0, 0, 0, 0);
@@ -492,6 +473,23 @@ a[x-apple-data-detectors] {
         color: #ffffff;
     }
 
+    .nav-container .active {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        text-decoration-thickness: 3px;
+        border-radius: 5px;
+        color: var(--primary-color);
+        text-decoration-color: var(--primary-color);
+    }
+
+    .nav-container .no .active {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        text-decoration-thickness: 3px;
+        border-radius: 5px;
+        color: white;
+        text-decoration-color: white;
+    }
 }
 
 .btn-nav {
