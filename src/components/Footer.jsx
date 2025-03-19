@@ -14,6 +14,7 @@ class Footer extends React.Component {
                     <div className="footer-column">
                         <h3>TRÄNING</h3>
                         <ul>
+                            <li><Link to="/newsAndEvents">Nyheter & Evenemang</Link></li>
                             <li><Link to="/facilities#utopia">USM i Utopia</Link></li>
                             <li><Link to="/facilities#ostra">USM på Östra</Link></li>
                             <li><Link to="/facilities#mariehem">USM på Mariehem</Link></li>
@@ -39,8 +40,6 @@ class Footer extends React.Component {
                             <li><Link to="https://www.instagram.com/umeasportomotion/" rel="noopener noreferrer"
                                       target="_blank">Följ
                                 oss på Instagram</Link></li>
-                            <h3>Aktuellt</h3>
-                            <li><Link to="/newsAndEvents">Nyheter & Evenemang</Link></li>
                         </ul>
                     </div>
                 </div>
