@@ -3,7 +3,7 @@ import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
 import L from "leaflet";
 
 const customIcon = new L.Icon({
-    iconUrl: "../../public/pictures/map_marker.png",
+    iconUrl: "pictures/map_marker.png",
     iconSize: [50, 50],
     iconAnchor: [25, 40],
     popupAnchor: [1, -34],

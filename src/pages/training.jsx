@@ -33,7 +33,7 @@ class Training extends React.Component {
 
                     <div className="info-items animate" id="PT">
                         <div className="gray-box">
-                            <img alt="Grupp Träning" src="../../public/pictures/group_training.png"/>
+                            <img alt="Grupp Träning" src="pictures/group_training.png"/>
                             <div className="gray-box-content">
                                 <div className="gray-box-text">
                                     <h2>USM START</h2>
@@ -48,7 +48,7 @@ class Training extends React.Component {
                         </div>
 
                         <div className="gray-box">
-                            <img alt="PT Träning" src="../../public/pictures/pt_training.png"/>
+                            <img alt="PT Träning" src="pictures/pt_training.png"/>
                             <div className="gray-box-content">
                                 <div className="gray-box-text">
                                     <h2>BOKA PT</h2>
