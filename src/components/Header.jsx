@@ -34,7 +34,7 @@ const Header = () => {
             <nav className="nav-container">
                 <div className="logo">
                     <NavLink to="/">
-                        <img alt="Logo" id="logo-img" src="../../public/pictures/logo.png"/>
+                        <img alt="Logo" id="logo-img" src="pictures/logo.png"/>
                     </NavLink>
                 </div>
 
