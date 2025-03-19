@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {HashRouter as Router, Route, Routes} from "react-router-dom";
 import {HelmetProvider} from 'react-helmet-async';
 import "leaflet/dist/leaflet.css";
 
@@ -21,7 +21,7 @@ import "./styles.css";
 function App() {
     return (
         <HelmetProvider>
-            <Router>
+            <Router basename="/">
                 <ToTop/>
                 <Header/>
                 <Routes>
