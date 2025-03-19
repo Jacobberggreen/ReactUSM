@@ -821,20 +821,20 @@ nav ul li a .active {
 
 
 /*------------info boxes------------------*/
-
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     width: 95%;
     margin: 4vw auto;
     justify-content: space-between;
+    gap: 3vw;
 }
 
 .info-box {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     height: 26vw;
     background: #f0f0f0;
     border: 20px solid #f0f0f0;
@@ -1976,12 +1976,12 @@ iframe {
     }
 
     .info-box {
-        height: 45vw;
+        height: 55vw;
         margin-bottom: 5vw;
     }
 
     .info-box h2 {
-        font-size: 4vw;
+        font-size: 5vw;
         margin: 0 auto;
     }
 
@@ -1992,7 +1992,7 @@ iframe {
     }
 
     .info-text p {
-        font-size: 3.5vw;
+        font-size: 4vw;
         margin: 5% 0 5% 0;
     }
 
