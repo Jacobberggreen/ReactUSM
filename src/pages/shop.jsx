@@ -27,7 +27,7 @@ class Shop extends React.Component {
                 <section className="shop-section">
                     <div className="page-text">
                         <div className="page-text-content">
-                            <h1>BUTIK OCH PRESENTKORT</h1>
+                            <h1>BUTIK</h1>
                         </div>
                     </div>
 

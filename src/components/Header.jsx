@@ -21,7 +21,7 @@ const Header = () => {
     }, []);
 
     const navLinks = [
-        {path: "/shop", label: "Shop", className: "yes search-padding"},
+        {path: "/shop", label: "Butik", className: "yes search-padding"},
         {path: "/training", label: "Boka Träning", className: "yes"},
         {path: "/facilities", label: "Anläggningar", className: "yes"},
         {path: "/member", label: "BLI MEDLEM", className: "no", btn: true},
