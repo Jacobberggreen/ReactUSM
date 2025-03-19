@@ -63,7 +63,7 @@ class Shop extends React.Component {
                         <div className="shop-link-box animate">
                             <div className="shop-link-content">
                                 <div className="shop-link-text">
-                                    <h2>BUTIK</h2>
+                                    <h2>Produkter</h2>
                                     <p>Denna länk tar dig till en webbshop med våra produkter</p>
                                 </div>
                                 <div className="gray-box-button">
