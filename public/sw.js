@@ -1,40 +1,50 @@
-self.addEventListener('install', event => {
+const CACHE_NAME = "v1";
+const PRE_CACHE_ASSETS = [
+    "/",
+    "/index.html",
+    "/manifest.json",
+
+    "/images/fav.png",
+
+    "/pictures/logo.png"
+];
+
+self.addEventListener("install", event => {
     event.waitUntil(
-        caches.open('v1').then(cache => {
-            return cache.addAll([
-                '../USM/index.html',
-                '../USM/about.html',
-                '../USM/cookies.html',
-                '../USM/facilities.html',
-                '../USM/member.html',
-                '../USM/policy.html',
-                '../USM/shop.html',
-                '../USM/training.html',
-                '../USM/navbar.html',
-                '../USM/footer.html',
-
-                '../USM/styles.css',
-
-                '../USM/js/script.js',
-                '../USM/js/about.js',
-                '../USM/js/app.js',
-                '../USM/js/facilities.js',
-                '../USM/js/homepage.js',
-                '../USM/js/member.js',
-                '../USM/js/sw.js',
-                '../USM/js/training.js',
-                '../USM/js/manifest.json',
-
-                '../USM/pictures/fav.png'
-            ]);
+        caches.open(CACHE_NAME).then(cache => {
+            return cache.addAll(PRE_CACHE_ASSETS);
         })
     );
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener("activate", event => {
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames
+                    .filter(name => name !== CACHE_NAME)
+                    .map(name => caches.delete(name))
+            );
+        })
+    );
+});
+
+self.addEventListener("fetch", event => {
     event.respondWith(
         caches.match(event.request).then(response => {
-            return response || fetch(event.request);
+            return (
+                response ||
+                fetch(event.request).then(fetchResponse => {
+                    // Spara endast bilder och videor i cache om de laddas första gången
+                    if (event.request.destination === "image" || event.request.destination === "video") {
+                        return caches.open(CACHE_NAME).then(cache => {
+                            cache.put(event.request, fetchResponse.clone()); // Lägg till i cache vid första laddning
+                            return fetchResponse;
+                        });
+                    }
+                    return fetchResponse;
+                })
+            );
         })
     );
 });
