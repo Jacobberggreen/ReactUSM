@@ -1929,6 +1929,10 @@ iframe {
         width: auto;
     }
 
+    .btn-white {
+        font-size: 6vw;
+    }
+
 
     /*---------------Homepage-------------------*/
     .hero-text {
