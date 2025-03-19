@@ -63,7 +63,7 @@ class Home extends React.Component {
                                         <p>Se vårat utbud och boka pass eller program</p>
                                     </div>
                                     <div className="info-button-box">
-                                        <Link className="btn-info" to="/">LÄS MER</Link>
+                                        <Link className="btn-info" to="/training">LÄS MER</Link>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ class Home extends React.Component {
                                         <p>Kika in våra produkter eller köp presentkort</p>
                                     </div>
                                     <div className="info-button-box">
-                                        <Link className="btn-info" to="/">KÖP</Link>
+                                        <Link className="btn-info" to="/shop">KÖP</Link>
                                     </div>
                                 </div>
                             </div>
