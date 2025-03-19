@@ -2114,13 +2114,17 @@ iframe {
     .gym-card {
         position: relative;
         width: 90%;
-        height: 40vw;
+        height: 45vw;
+    }
+
+    .gym-content h2 {
+        font-size: 3rem;
     }
 
     .gym-hours {
-        font-size: 1.2rem;
-        text-align: center;
-        margin-right: 0;
+        font-size: 5vw;
+        text-align: right;
+        margin-right: 18vw;
     }
 
     .custom-popup-content .popup-title {
@@ -2408,7 +2412,11 @@ iframe {
     .gym-card {
         position: relative;
         width: 90%;
-        height: 40vw;
+        height: 50vw;
+    }
+
+    .gym-content h2 {
+        font-size: 2rem;
     }
 
     .gym-status-info {
