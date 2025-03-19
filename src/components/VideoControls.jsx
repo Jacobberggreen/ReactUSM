@@ -29,7 +29,7 @@ const VideoControls = () => {
     return (
         <>
             <video ref={videoRef} id="background-video" autoPlay loop muted playsInline>
-                <source id="hero-video" src="/media/gym_video.mp4" type="video/mp4"/>
+                <source id="hero-video" src="media/gym_video.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
 
