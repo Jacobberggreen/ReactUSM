@@ -7,15 +7,15 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ToTop from "./components/ToTop.jsx";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Cookies from "./pages/Cookies";
-import Facilities from "./pages/Facilities";
-import Member from "./pages/Member";
-import Policy from "./pages/Policy";
-import Shop from "./pages/Shop";
-import Training from "./pages/Training";
-import NewsAndEvents from "./pages/NewsAndEvents";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Cookies from "./pages/cookies";
+import Facilities from "./pages/facilities";
+import Member from "./pages/member";
+import Policy from "./pages/policy";
+import Shop from "./pages/shop";
+import Training from "./pages/training";
+import NewsAndEvents from "./pages/newsAndEvents";
 
 import "./styles.css";
 
