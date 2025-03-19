@@ -26,15 +26,15 @@ function App() {
                 <ToTop/>
                 <Header/>
                 <Routes>
-                    <Route exact path="/" element={<Home/>}/>
-                    <Route path="/about" element={<About/>}/>
-                    <Route path="/cookies" element={<Cookies/>}/>
-                    <Route path="/facilities" element={<Facilities/>}/>
-                    <Route path="/member" element={<Member/>}/>
-                    <Route path="/policy" element={<Policy/>}/>
-                    <Route path="/shop" element={<Shop/>}/>
-                    <Route path="/training" element={<Training/>}/>
-                    <Route path="/newsAndEvents" element={<NewsAndEvents/>}/>
+                    <Route exact path="/#/" element={<Home/>}/>
+                    <Route path="/#/about" element={<About/>}/>
+                    <Route path="/#/cookies" element={<Cookies/>}/>
+                    <Route path="/#/facilities" element={<Facilities/>}/>
+                    <Route path="/#/member" element={<Member/>}/>
+                    <Route path="/#/policy" element={<Policy/>}/>
+                    <Route path="/#/shop" element={<Shop/>}/>
+                    <Route path="/#/training" element={<Training/>}/>
+                    <Route path="/#/newsAndEvents" element={<NewsAndEvents/>}/>
                 </Routes>
                 <Footer/>
             </Router>
