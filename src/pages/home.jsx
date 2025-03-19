@@ -35,7 +35,7 @@ class Home extends React.Component {
                 </Helmet>
 
                 <div id="preloader">
-                    <img alt="Ditt gym i Umeå - USM" id="preloader-logo" src="pictures/logo.png"/>
+                    <img alt="Ditt gym i Umeå - USM" id="preloader-logo" src="../public/pictures/logo.png"/>
                 </div>
 
                 <section className="hero">
