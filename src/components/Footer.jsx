@@ -8,7 +8,7 @@ class Footer extends React.Component {
                 <div className="footer-links">
                     <div className="logo">
                         <Link to="/">
-                            <img alt="USM Logo" src="pictures/logo.png"/>
+                            <img alt="USM Logo" src="/pictures/logo.png"/>
                         </Link>
                     </div>
                     <div className="footer-column">

@@ -35,7 +35,7 @@ class Home extends React.Component {
                 </Helmet>
 
                 <div id="preloader">
-                    <img alt="Ditt gym i Umeå - USM" id="preloader-logo" src="pictures/logo.png"/>
+                    <img alt="Ditt gym i Umeå - USM" id="preloader-logo" src="../../public/pictures/logo.png"/>
                 </div>
 
                 <section className="hero">
@@ -56,7 +56,7 @@ class Home extends React.Component {
                     <div className="info-grid">
                         <div className="info-box full-box">
                             <div className="info-content">
-                                <img alt="Dumbbells" src="pictures/dumbbells.png"/>
+                                <img alt="Dumbbells" src="../../public/pictures/dumbbells.png"/>
                                 <div className="tint">
                                     <div className="info-text">
                                         <h2>PASS & PROGRAM</h2>
@@ -71,7 +71,7 @@ class Home extends React.Component {
 
                         <div className="info-box">
                             <div className="info-content">
-                                <img alt="Butik" src="pictures/store_items.png"/>
+                                <img alt="Butik" src="../../public/pictures/store_items.png"/>
                                 <div className="tint">
                                     <div className="info-text">
                                         <h2>BUTIK & PRESENTKORT</h2>
@@ -93,7 +93,7 @@ class Home extends React.Component {
                         </Link>
                         <div className="facility-grid">
                             <div className="facility">
-                                <img alt="Utopia" src="pictures/utopia_650x650.jpg"/>
+                                <img alt="Utopia" src="../../public/pictures/utopia_650x650.jpg"/>
                                 <div className="overlay">
                                     <h3>Utopia</h3>
                                     <p>Mån-tors: 05.00-23.00</p>
@@ -103,7 +103,7 @@ class Home extends React.Component {
                                 </div>
                             </div>
                             <div className="facility">
-                                <img alt="Östra" src="pictures/ostra_650x650.jpg"/>
+                                <img alt="Östra" src="../../public/pictures/ostra_650x650.jpg"/>
                                 <div className="overlay">
                                     <h3>Östra</h3>
                                     <p>Mån-tors: 05.00-23.00</p>
@@ -113,7 +113,7 @@ class Home extends React.Component {
                                 </div>
                             </div>
                             <div className="facility">
-                                <img alt="Mariehem" src="pictures/mariehem_650x650.jpg"/>
+                                <img alt="Mariehem" src="../../public/pictures/mariehem_650x650.jpg"/>
                                 <div className="overlay">
                                     <h3>Mariehem</h3>
                                     <p>Mån-tors: 05.00-23.00</p>
