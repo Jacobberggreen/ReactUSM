@@ -1,4 +1,3 @@
-// --------------Animated transition----------------
 export function AnimatedElements() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

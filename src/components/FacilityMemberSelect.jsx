@@ -1,16 +1,14 @@
 import React, {useState} from "react";
 
 const FacilityMemberSelect = ({membershipCards}) => {
-    const [selectedFacility, setSelectedFacility] = useState("all"); // Visa alla från början!
+    const [selectedFacility, setSelectedFacility] = useState("all");
 
-    // Funktion för att visa rätt kort
     const shouldShowCard = (facility) => {
         return selectedFacility === "all" || facility === selectedFacility;
     };
 
     return (
         <div>
-            {/* Dropdown */}
             <div className="membership-filter animate">
                 <select
                     className="btn-info selectInfo selectLarge"
@@ -24,13 +22,12 @@ const FacilityMemberSelect = ({membershipCards}) => {
                 </select>
             </div>
 
-            {/* Medlemskort */}
             <div className="membership-cards animate">
                 {membershipCards.map((card, index) => (
                     <div
                         key={index}
                         className="membership-card"
-                        style={{display: shouldShowCard(card.facility) ? "block" : "none"}} // Exakt som din gamla JS!
+                        style={{display: shouldShowCard(card.facility) ? "block" : "none"}}
                     >
                         <img src={card.img} alt={card.title}/>
                         <div className="card-content">

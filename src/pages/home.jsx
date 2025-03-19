@@ -11,6 +11,7 @@ import {AnimatedElements} from '../components/AnimatedElements.jsx';
 import {LoadingScreen} from "../components/LoadingScreen.jsx";
 import NewsList from "../components/NewsList.jsx";
 import EventsList from "../components/EventsList.jsx";
+import Marquee from "../components/Marquee.jsx";
 
 const TITLE = config.SITE_TITLE;
 const DESC = "Umeå Sport och Motion.";
@@ -48,76 +49,7 @@ class Home extends React.Component {
                     </div>
                 </section>
 
-                <div className="marquee">
-                    <div className="marquee-inner">
-                        <div className="marquee-content"><span>USM</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>DITT GYM I UMEÅ</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>UTOPIA</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>NAVET</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>ÖSTRA</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>MARIEHEM</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-
-                        <div className="marquee-content"><span>USM</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>UTOPIA</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>NAVET</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>MARIEHEM</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-
-                        <div className="marquee-content"><span>USM</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>DITT GYM I UMEÅ</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>UTOPIA</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>NAVET</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>ÖSTRA</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                        <div className="marquee-content"><span>MARIEHEM</span></div>
-                        <div className="marquee-content"><span>
-                <img alt=" - USM - " className="rolling-banner-img" src="/pictures/fav.png"/>
-                </span></div>
-                    </div>
-                </div>
+                <Marquee/>
 
                 <section className="animate">
 
@@ -215,9 +147,7 @@ class Home extends React.Component {
                     <Link className="btn-large" to="/about">Läs mer om oss</Link>
                     <p>Utopia | Östra | Mariehem</p>
                 </div>
-
                 <ScrollToTop/>
-
             </main>
         );
     }

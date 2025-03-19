@@ -1,12 +1,10 @@
-// --------------Homepage Video Mute & Pause----------------
 import {useRef, useState} from 'react';
 
 const VideoControls = () => {
-    const videoRef = useRef(null); // Referens till videon
-    const [muted, setMuted] = useState(true); // State för mute
-    const [paused, setPaused] = useState(false); // State för pause
+    const videoRef = useRef(null);
+    const [muted, setMuted] = useState(true);
+    const [paused, setPaused] = useState(false);
 
-    // Funktion för att mute/unmute
     const toggleMute = () => {
         if (videoRef.current) {
             const video = videoRef.current;
@@ -15,7 +13,6 @@ const VideoControls = () => {
         }
     };
 
-    // Funktion för att pausa/play
     const togglePause = () => {
         if (videoRef.current) {
             const video = videoRef.current;

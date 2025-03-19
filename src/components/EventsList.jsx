@@ -8,14 +8,12 @@ const EventsList = ({latestOnly = false}) => {
         fetch("/events.json")
             .then((response) => response.json())
             .then((data) => {
-                // Sortera events efter datum (närmast i tiden först)
                 const sortedEvents = data.sort((a, b) => new Date(a.date) - new Date(b.date));
                 setEvents(sortedEvents);
             })
             .catch((error) => console.error("Error loading events:", error));
     }, []);
 
-    // Om `latestOnly` är true, visa bara det senaste eventet
     const displayedEvents = latestOnly ? events.slice(0, 1) : events;
 
     return (

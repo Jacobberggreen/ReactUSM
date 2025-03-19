@@ -15,10 +15,9 @@ class Footer extends React.Component {
                         <h3>TRÄNING</h3>
                         <ul>
                             <li><Link to="/facilities#utopia">USM i Utopia</Link></li>
-                            <li><Link to="/facilities#navet">USM i Navet</Link></li>
                             <li><Link to="/facilities#ostra">USM på Östra</Link></li>
                             <li><Link to="/facilities#mariehem">USM på Mariehem</Link></li>
-                            <li><Link to="/training">Boka Pass</Link></li>
+                            <li><Link to="/training">Boka Träning</Link></li>
                         </ul>
                     </div>
                     <div className="footer-column">

@@ -430,6 +430,26 @@ a[x-apple-data-detectors] {
     font-style: italic;
 }
 
+
+.nav-container .active {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    text-decoration-color: var(--primary-color);
+}
+
+.nav-container .no .active {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+    border-radius: 5px;
+    color: white;
+    text-decoration-color: white;
+}
+
+
 @media (min-width: 981px) {
     .header.home {
         background: rgba(0, 0, 0, 0);
@@ -486,6 +506,7 @@ a[x-apple-data-detectors] {
     display: flex;
     justify-content: space-between;
     margin-right: 50px;;
+    transition: all 0.2s ease;
 }
 
 nav ul {
@@ -960,6 +981,8 @@ nav ul li a .active {
 .news-event-container .facility-link {
     margin: 0;
     align-items: start;
+    color: var(--primary-color);
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 2px 1px;
 }
 
 .homePageNews, .homePageEvents {
@@ -989,6 +1012,11 @@ nav ul li a .active {
     height: auto;
     max-height: 100rem;
     overflow-y: auto;
+}
+
+.news-event-links {
+    display: none;
+    margin: 2vw 0 0 4vw;
 }
 
 .homePageNews, .homePageEvents {
@@ -1034,7 +1062,6 @@ nav ul li a .active {
 
 .membership-image img {
     width: 100%;
-
 }
 
 .membership-filter {
@@ -1169,10 +1196,6 @@ nav ul li a .active {
 
 .mariehem-popup::before {
     background-image: url('../public/pictures/mariehem_650x650.jpg');
-}
-
-.navet-popup::before {
-    background-image: url('../public/pictures/navet_650x650.jpg');
 }
 
 .custom-popup-content {
@@ -1999,10 +2022,31 @@ iframe {
         font-size: 2.5vw;
     }
 
+    main#home .news-event-container {
+        gap: 3vw;
+    }
+
+    .news-event-container {
+        margin: 0 auto;
+        width: 95%;
+        display: grid;
+        align-content: start;
+        grid-template-columns: 1fr;
+        gap: 15vw;
+    }
+
+    .news-event-links {
+        display: block;
+    }
+
     .btn-info {
         width: 50%;
         height: 5vw;
         font-size: 4vw;
+    }
+
+    .about-us {
+        margin-top: 3vw;
     }
 
     .about-us .btn-large {

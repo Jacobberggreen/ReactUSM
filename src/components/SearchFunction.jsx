@@ -1,4 +1,3 @@
-// -------------- Search function----------------
 import React, {useState, useEffect, useRef} from 'react';
 import {useNavigate} from 'react-router-dom';
 
@@ -13,12 +12,11 @@ const SearchFunction = ({isMobile}) => {
     const inputRef = useRef(null);
     const getBorderRadius = () => {
         if (searchText.trim() === '') {
-            return '20px'; // Fullt rundad när tom
+            return '20px';
         } else {
-            return '20px 20px 0 0'; // Endast övre hörn när resultat visas
+            return '20px 20px 0 0';
         }
     };
-
 
     const pages = [
         {path: '/facilities', name: 'Anläggningar', content: 'Här hittar du våra gym, öppettider, träning'},
@@ -30,15 +28,14 @@ const SearchFunction = ({isMobile}) => {
         {path: '/policy', name: 'Policy', content: 'Integritetspolicy, GDPR, regler'},
         {path: '/training', name: 'Träning', content: 'Boka pass, gruppträning, PT, gym'}
     ];
-    
+
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (searchRef.current && !searchRef.current.contains(event.target)) {
-                setSearchOpen(false); // Stänger sökrutan
-                setSearchText(''); // Tömmer text
-                setResults([]); // Tömmer resultat
+                setSearchOpen(false);
+                setSearchText('');
+                setResults([]);
 
-                // ✅ Tar bort klasserna
                 if (searchPaddingRef.current) {
                     searchPaddingRef.current.classList.remove('active', 'active2');
                 }
@@ -48,8 +45,6 @@ const SearchFunction = ({isMobile}) => {
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
-
-    // Sök i content + namn
     useEffect(() => {
         if (searchText.trim() === '') {
             setResults([]);
@@ -64,10 +59,10 @@ const SearchFunction = ({isMobile}) => {
 
     useEffect(() => {
         if (searchOpen && inputRef.current) {
-            inputRef.current.focus(); // Fokusera
-            inputRef.current.select(); // Markera all text
+            inputRef.current.focus();
+            inputRef.current.select();
         }
-    }, [searchOpen]); // Kör varje gång searchOpen ändras
+    }, [searchOpen]);
 
     useEffect(() => {
         if (searchPaddingRef.current) {
@@ -77,7 +72,7 @@ const SearchFunction = ({isMobile}) => {
                 searchPaddingRef.current.classList.remove('active2');
             }
         }
-    }, [searchText]); // Kör på varje förändring i sökrutan
+    }, [searchText]);
 
 
     const handleResultClick = (path) => {
@@ -123,7 +118,6 @@ const SearchFunction = ({isMobile}) => {
                     borderRadius: getBorderRadius()
                 }}
             />
-
 
             {searchOpen && searchText && (
                 <div id="search-results" className="results-grid">

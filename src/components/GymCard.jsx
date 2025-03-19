@@ -1,13 +1,12 @@
 import React, {useState} from "react";
 
-// Enkel funktion för att ta bort åäö
 const slugify = (text) => {
     return text
         .toLowerCase()
         .replace(/å/g, "a")
         .replace(/ä/g, "a")
         .replace(/ö/g, "o")
-        .replace(/\s+/g, "-"); // Om det finns mellanslag
+        .replace(/\s+/g, "-");
 };
 
 const GymCard = ({name, hours, address, phone, openHours}) => {
@@ -20,7 +19,7 @@ const GymCard = ({name, hours, address, phone, openHours}) => {
     const isOpen = currentHour >= open && currentHour < close;
     const statusIcon = isOpen ? "✅" : "❌";
 
-    const gymId = slugify(name); // Använd slugify för att få korrekt ID
+    const gymId = slugify(name);
 
     return (
         <div className={`gym-card ${showInfo ? "active" : ""}`} id={gymId}>

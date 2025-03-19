@@ -1,4 +1,3 @@
-// -------------- Mail To ----------------
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
@@ -24,20 +23,16 @@ const ContactSection = () => {
 
         const {name, email, message} = formData;
 
-        // Skapa mailto-länk
         const mailtoLink = `mailto:kontakt@placeholder.se?subject=Kontakt från ${encodeURIComponent(
             name
         )}&body=Namn: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(
             email
         )}%0A%0A${encodeURIComponent(message)}`;
 
-        // Öppna användarens e-postklient
         window.location.href = mailtoLink;
 
-        // Bekräftelsemeddelande
         setFormMessage("Ditt meddelande har skickats!");
 
-        // Rensa fälten efter 3 sekunder
         setTimeout(() => {
             setFormData({name: "", email: "", message: ""});
             setFormMessage("");
@@ -63,12 +58,6 @@ const ContactSection = () => {
                         <td>090-12 50 49</td>
                         <td>usm@usm.nu</td>
                         <td>Skolgatan 62 A</td>
-                    </tr>
-                    <tr className="contact-text">
-                        <td><strong>USM i Navet</strong></td>
-                        <td>090-12 50 49</td>
-                        <td>usm@usm.nu</td>
-                        <td>Västra Kyrkogatan 6</td>
                     </tr>
                     <tr className="contact-text">
                         <td><strong>USM på Östra</strong></td>

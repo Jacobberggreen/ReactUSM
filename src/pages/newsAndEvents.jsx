@@ -33,25 +33,30 @@ class NewsAndEvents extends React.Component {
                         </div>
                     </div>
 
+                    <Link className="facility-link news-event-links" to="/newsAndEvents#events"
+                          onClick={() => setTimeout(() => {
+                              document.getElementById("events")?.scrollIntoView({behavior: "smooth"});
+                          }, 100)}>
+                        Evenemang <span className="arrow">➤</span>
+                    </Link>
+
                     <div className="news-event-container newsAndEvents">
-                        <div className="homePageNews animate">
+                        <div className="homePageNews animate" id="news">
                             <Link className="facility-link" to="/newsAndEvents">
-                                Nyheter <span className="arrow">➤</span>
+                                Nyheter <span className="arrow"/>
                             </Link>
                             <NewsList/>
                         </div>
 
-                        <div className="homePageEvents animate">
+                        <div className="homePageEvents animate" id="events">
                             <Link className="facility-link" to="/newsAndEvents">
-                                Evenemang <span className="arrow">➤</span>
+                                Evenemang <span className="arrow"/>
                             </Link>
                             <EventsList/>
                         </div>
                     </div>
                 </section>
-
                 <ScrollToTop/>
-
             </main>
         )
     }

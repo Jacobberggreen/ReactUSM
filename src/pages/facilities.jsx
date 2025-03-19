@@ -5,14 +5,13 @@ import {Helmet} from "react-helmet";
 
 import ScrollToTop from "../components/ScrollToTop.jsx";
 import {AnimatedElements} from "../components/AnimatedElements.jsx";
-import GymMap from "../components/GymMap.jsx"; // Importera nya GymMap
-import GymCard from "../components/GymCard.jsx"; // Importera nya GymCard
+import GymMap from "../components/GymMap.jsx";
+import GymCard from "../components/GymCard.jsx";
 
 const TITLE = config.SITE_TITLE + " - ANLÄGGNINGAR";
 const DESC = "Umeå Sport och Motion.";
 const CANONICAL = config.SITE_DOMAIN + "/";
 
-// Gemensam öppettider för alla kort
 const facilitiesData = [
     {
         name: "Utopia",
@@ -61,17 +60,15 @@ class Facilities extends React.Component {
 
                     <div className="facilities-container animate">
 
-                        {/* Kartan med popup om öppettider */}
                         <GymMap/>
 
-                        {/* Gymkort som visas under kartan */}
                         <div className="gym-info-container" id="container-1">
                             <div className="gym-card" id="news">
                                 <div className="gym-background"></div>
                                 <div className="gym-content">
                                     <h2>Nyheter</h2>
                                     <div className="newsBox">
-                                        <Link className="btn-large btn-white" to="/about">LÄS MER</Link>
+                                        <Link className="btn-large btn-white" to="/newsAndEvents">LÄS MER</Link>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +99,6 @@ class Facilities extends React.Component {
 
                     </div>
 
-                    {/* Legend för status */}
                     <div className="gym-status-container">
                         <div className="gym-status-info">
                             <p>
@@ -113,7 +109,6 @@ class Facilities extends React.Component {
                         </div>
                     </div>
                 </section>
-
                 <ScrollToTop/>
             </main>
         );

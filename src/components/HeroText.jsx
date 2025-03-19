@@ -1,4 +1,3 @@
-// -------------- Hero text ----------------
 import {useEffect, useRef} from 'react';
 
 const HeroText = () => {

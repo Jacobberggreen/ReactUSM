@@ -8,14 +8,12 @@ const NewsList = ({latestOnly = false}) => {
         fetch("/news.json")
             .then((response) => response.json())
             .then((data) => {
-                // Sortera nyheterna efter datum (senaste först)
                 const sortedNews = data.sort((a, b) => new Date(b.date) - new Date(a.date));
                 setNews(sortedNews);
             })
             .catch((error) => console.error("Error loading news:", error));
     }, []);
 
-    // Om `latestOnly` är true, visa bara den senaste nyheten
     const displayedNews = latestOnly ? news.slice(0, 1) : news;
 
     return (

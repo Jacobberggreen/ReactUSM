@@ -1,8 +1,7 @@
-// ---------------- Login menu ----------------
 import React from 'react';
 
 const LoginPopup = ({show, onClose}) => {
-    if (!show) return null; // Om inte show, rendera inget
+    if (!show) return null;
 
     return (
         <div

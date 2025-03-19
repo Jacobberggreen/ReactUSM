@@ -15,7 +15,6 @@ class Member extends React.Component {
     }
 
     render() {
-        // Medlemskort-listan (exakt som i din gamla kod)
         const membershipCards = [
             {
                 facility: "utopia",
@@ -111,11 +110,8 @@ class Member extends React.Component {
                         <img alt="Medlemskapskort" src="/pictures/medlemskort.png"/>
                     </div>
 
-                    {/* Dropdown och kort-lista sköts av FacilityMemberSelect */}
                     <FacilityMemberSelect membershipCards={membershipCards}/>
-
                 </section>
-
                 <ScrollToTop/>
             </main>
         );

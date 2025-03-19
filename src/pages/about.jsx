@@ -51,12 +51,7 @@ class About extends React.Component {
                             innehållsrikt
                             utbud.
                             Anläggningen öppnade i mars 2015.<br/><br/><br/>
-                            I Umeås nya simhall Navet hittar du USM's andra anläggning. På USM i Navet erbjuder vi ett
-                            fullt
-                            utrustat gym med stor konditionsdel. Anläggningen är ca 1400 kvm och finns på våning 2 med
-                            utsikt
-                            över
-                            bland annat bassängerna i simhallen. Anläggningen öppnade i augusti 2016.<br/><br/><br/>
+
                             På Mariehem centrum hittar du USM's tredje anläggning. På USM på Mariehem erbjuder vi ett
                             fullt
                             utrustat
@@ -64,6 +59,7 @@ class About extends React.Component {
                             i allt
                             från
                             utrustning till lokaler. Anläggningen öppnade i december 2017.<br/><br/><br/>
+
                             Till sist finner du vår nyaste anläggning på Umeå Östra, i det nya kontorshuset bredvid
                             Östra
                             station.
@@ -74,20 +70,16 @@ class About extends React.Component {
                             vardag
                             där
                             träning är en naturlig del av din dag. Anläggningen öppnade i september 2024.<br/><br/><br/>
+
                             Välkommen till oss!</p>
                     </div>
-
 
                     <div className="page-text animate">
                         <h1>KONTAKTA OSS</h1>
                     </div>
-
                     <ContactSection/>
-
                 </section>
-
                 <ScrollToTop/>
-
             </main>
         )
     }

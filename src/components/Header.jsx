@@ -5,12 +5,11 @@ import SearchFunction from "./SearchFunction";
 
 const Header = () => {
     const location = useLocation();
-    const isHome = location.pathname === '/'; // Kolla om vi är på startsidan
+    const isHome = location.pathname === '/';
 
-    const [showLogin, setShowLogin] = useState(false); // State för login-popup
-    const [menuOpen, setMenuOpen] = useState(false);  // State för hamburgermeny
+    const [showLogin, setShowLogin] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    // Hantera window resize för att stänga hamburgermeny om man växlar till desktop
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 980) {
@@ -21,7 +20,6 @@ const Header = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    // Objekt för att hålla alla länkar och labels
     const navLinks = [
         {path: "/shop", label: "Shop", className: "yes search-padding"},
         {path: "/training", label: "Boka Träning", className: "yes"},
@@ -53,7 +51,7 @@ const Header = () => {
                                 className={({isActive}) =>
                                     `${isActive ? 'active' : ''} ${btn ? 'btn-info btn-nav' : ''}`.trim()
                                 }
-                                onClick={() => setMenuOpen(false)} // Stänger meny när man klickar
+                                onClick={() => setMenuOpen(false)}
                             >
                                 {label}
                             </NavLink>
@@ -74,7 +72,6 @@ const Header = () => {
                         </a>
                     </li>
                 </ul>
-
 
                 <button
                     className={`hamburger ${menuOpen ? 'active' : ''}`}

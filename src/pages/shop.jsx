@@ -31,7 +31,6 @@ class Shop extends React.Component {
                         </div>
                     </div>
 
-
                     <div className="shop-items">
                         <div className="gray-box animate">
                             <img alt="Presentkort" src="/pictures/giftcard.png"/>
@@ -74,14 +73,9 @@ class Shop extends React.Component {
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
                 </section>
-
                 <ScrollToTop/>
-
             </main>
         )
     }

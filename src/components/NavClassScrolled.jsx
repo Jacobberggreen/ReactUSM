@@ -1,4 +1,3 @@
-// -------------- Nav Scroll ----------------
 import {useEffect} from 'react';
 
 const NavClassScrolled = () => {
@@ -14,19 +13,18 @@ const NavClassScrolled = () => {
             }
 
             if (window.scrollY === 0) {
-                navMenu.classList.remove('active'); // Döljer ev. öppen meny
+                navMenu.classList.remove('active');
             }
         };
 
         window.addEventListener('scroll', handleScroll);
 
-        // Clean up (tar bort lyssnaren om komponenten tas bort)
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []); // Kör bara en gång vid mount
+    }, []);
 
-    return null; // Eftersom detta är en logik-komponent, inte UI
+    return null;
 };
 
 export default NavClassScrolled;

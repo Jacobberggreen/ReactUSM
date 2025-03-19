@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
 import L from "leaflet";
 
-// Din egen ikon
 const customIcon = new L.Icon({
     iconUrl: "pictures/map_marker.png",
     iconSize: [50, 50],
@@ -20,7 +19,6 @@ const slugify = (text) => {
 };
 
 
-// Lista på gym med öppettider
 const facilities = [
     {
         name: "Utopia",
@@ -39,7 +37,6 @@ const facilities = [
     },
 ];
 
-// GymMap-komponent
 const GymMap = () => {
     const [zoom, setZoom] = useState(window.innerWidth <= 768 ? 12 : 13);
     const now = new Date();
@@ -52,7 +49,6 @@ const GymMap = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    // Status för öppet/stängt
     const getStatusText = (openHours) => {
         const now = new Date();
         const currentHour = now.getHours();
@@ -96,7 +92,7 @@ const GymMap = () => {
             zoom={zoom}
             scrollWheelZoom={false}
             attributionControl={false}
-            id="map" // <-- sätt id direkt här
+            id="map"
         >
             <TileLayer
                 url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
@@ -108,9 +104,7 @@ const GymMap = () => {
                         <div className={`custom-popup ${slugify(facility.name)}-popup`}>
                             <div className="custom-popup-content">
                                 <div className="popup-title">{facility.name}</div>
-                                {/* Namn i stor text */}
                                 <div>{getStatusText(facility.openHours)}</div>
-                                {/* Öppettider idag + status */}
                             </div>
                         </div>
                     </Popup>

@@ -1,4 +1,3 @@
-// --------------Scroll to top----------------
 import {useEffect, useState} from 'react';
 
 const ScrollToTop = () => {
@@ -14,7 +13,7 @@ const ScrollToTop = () => {
         };
 
         window.addEventListener('scroll', toggleVisibility);
-        toggleVisibility(); // Kolla direkt när sidan laddas
+        toggleVisibility();
 
         return () => {
             window.removeEventListener('scroll', toggleVisibility);
@@ -28,7 +27,7 @@ const ScrollToTop = () => {
         });
     };
 
-    console.log('Scroll button visible:', isVisible); // Debug
+    console.log('Scroll button visible:', isVisible);
 
     return (
         <div

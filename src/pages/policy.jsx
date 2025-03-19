@@ -37,11 +37,8 @@ class Policy extends React.Component {
                             <iframe id="policy-frame" src="../src/components/policy.txt"></iframe>
                         </div>
                     </div>
-
                 </section>
-
                 <ScrollToTop/>
-
             </main>
         )
     }

@@ -4,6 +4,7 @@ import config from "../config.json";
 import {Helmet} from "react-helmet";
 
 import {AnimatedElements} from "../components/AnimatedElements.jsx";
+import ScrollToTop from "../components/ScrollToTop.jsx";
 
 const TITLE = config.SITE_TITLE + " - COOKIES";
 const DESC = "Umeå Sport och Motion.";
@@ -56,11 +57,8 @@ class Cookies extends React.Component {
                             användaruppgifter varje
                             gång du använder bokningssystemet.</p>
                     </div>
-
                 </section>
-
-                <div className="btn-info" id="scroll-to-top">TOP</div>
-
+                <ScrollToTop/>
             </main>
         )
     }
