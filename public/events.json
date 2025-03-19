@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Sommar Bootcamp",
+    "location": "Utopia Gym",
+    "date": "2025-06-15",
+    "content": "Delta i vårt intensiva sommar-bootcamp! Perfekt för alla nivåer."
+  },
+  {
+    "title": "Yoga Workshop",
+    "location": "Mariehem Gym",
+    "date": "2025-04-10",
+    "content": "Lär dig grunderna i yoga med vår expertinstruktör."
+  },
+  {
+    "title": "CrossFit Challenge",
+    "location": "Navet Gym",
+    "date": "2025-05-05",
+    "content": "Tävla i årets tuffaste CrossFit Challenge!"
+  }
+]
