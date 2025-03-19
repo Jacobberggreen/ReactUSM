@@ -33,7 +33,7 @@ class Shop extends React.Component {
 
                     <div className="shop-items">
                         <div className="gray-box animate">
-                            <img alt="Presentkort" src="/pictures/giftcard.png"/>
+                            <img alt="Presentkort" src="../../public/pictures/giftcard.png"/>
                             <div className="gray-box-content">
                                 <div className="gray-box-text">
                                     <h2>PRESENTKORT</h2>
@@ -47,7 +47,7 @@ class Shop extends React.Component {
                         </div>
 
                         <div className="gray-box animate searchable">
-                            <img alt="Foodbox" src="/pictures/foodbox.jpg"/>
+                            <img alt="Foodbox" src="../../public/pictures/foodbox.jpg"/>
                             <div className="gray-box-content">
                                 <div className="gray-box-text">
                                     <h2>FOODBOX 10-KORT</h2>

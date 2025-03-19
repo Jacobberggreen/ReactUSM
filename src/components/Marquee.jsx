@@ -1,6 +1,6 @@
 const Marquee = () => {
     const items = ["USM", "DITT GYM I UMEÅ", "UTOPIA", "ÖSTRA", "MARIEHEM"];
-    const imageSrc = "/pictures/fav.png";
+    const imageSrc = "../../public/pictures/fav.png";
     const repeatCount = 5;
 
     return (
